@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Smart Iron</string>
+    <string name="select_material">Odaberite materijal</string>
+    <string-array name="materials">
+        <item>Pamuk</item>
+        <item>Poliester</item>
+        <item>Svila</item>
+    </string-array>
+</resources>

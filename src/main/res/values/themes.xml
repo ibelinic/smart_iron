@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Smart_iron" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/buttonPrimaryColor</item> <!-- Postavite boju za primarne gumbe -->
+        <item name="colorSecondary">@color/buttonSecondaryColor</item> <!-- Postavite boju za sekundarne gumbe -->
+    </style>
+
+    <style name="Theme.Smart_iron" parent="Base.Theme.Smart_iron" />
+</resources>

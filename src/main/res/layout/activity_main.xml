@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-7dp"
+    tools:layout_editor_absoluteY="27dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="208dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="4dp"
+        android:text="Smart Iron"
+        android:textAlignment="center"
+        android:textColor="#0E86D4"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ironButton"
+        android:layout_width="172dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="36dp"
+        android:text="Peglaj"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureTextView" />
+
+    <TextView
+        android:id="@+id/ironingTimerTextView"
+        android:layout_width="292dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="4dp"
+        android:text="Vrijeme peglanja: 0 sekundi"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ironButton" />
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="343dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_background"
+        android:gravity="center"
+        android:text="Prikupljeni podaci"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ironingTimerTextView" />
+
+    <TextView
+        android:id="@+id/electricityTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Potrošena struja: 0 kWh"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotTemperatureTextView" />
+
+    <TextView
+        android:id="@+id/usedWaterTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Potrošena voda: 0 ml"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/electricityTextView" />
+
+    <TextView
+        android:id="@+id/waterTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Preostala voda: 400 ml"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usedWaterTextView" />
+
+    <TextView
+        android:id="@+id/clothesCountTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Broj ispeglanih komada: 0"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waterTextView" />
+
+    <TextView
+        android:id="@+id/hotTemperatureTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Temperatura vrelog dijela: 0°C"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoTextView" />
+
+    <TextView
+        android:id="@+id/temperatureTextView"
+        android:layout_width="186dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:text="Temperatura: "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toEndOf="@+id/materialSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/selectingMaterialTextView" />
+
+    <TextView
+        android:id="@+id/selectingMaterialTextView"
+        android:layout_width="128dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="32dp"
+        android:text="Odaberite materijal"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+
+    <Spinner
+        android:id="@+id/materialSpinner"
+        android:layout_width="127dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/materials"
+        android:prompt="@string/select_material"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectingMaterialTextView" />
+
+    <TextView
+        android:id="@+id/pourWaterTextView"
+        android:layout_width="316dp"
+        android:layout_height="23dp"
+        android:text="Morate ulijati vodu kako biste nastavili peglati!"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/pourWaterButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clothesCountTextView"
+        app:layout_constraintVertical_bias="0.826" />
+
+    <Button
+        android:id="@+id/pourWaterButton"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:text="Ulij vodu"
+        android:textSize="18sp"
+        android:backgroundTint="@color/buttonSecondaryColor"
+        app:layout_constraintBottom_toTopOf="@+id/resetButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clothesCountTextView"
+        app:layout_constraintVertical_bias="0.864" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="4dp"
+        android:text="Resetiraj"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="33dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Back"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
